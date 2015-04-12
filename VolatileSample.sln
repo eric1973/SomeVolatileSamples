@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolatileBlocking", "VolatileSample\VolatileBlocking.csproj", "{FCA5563A-22AA-4F56-AB39-BBF7B10BE813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolatileNotBlocking", "VolatileNotBlocking\VolatileNotBlocking.csproj", "{FF9150F6-1FB2-4C64-8F16-CDA688199518}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryBarrierNotBLocking", "MemoryBarrierNotBLocking\MemoryBarrierNotBLocking.csproj", "{C907FAC3-804F-46F8-8D47-6BB153F14A04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafeField", "ThreadSafeProperty\ThreadSafeField.csproj", "{68F35061-E388-46BB-971F-C5C10BA34CFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCA5563A-22AA-4F56-AB39-BBF7B10BE813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA5563A-22AA-4F56-AB39-BBF7B10BE813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA5563A-22AA-4F56-AB39-BBF7B10BE813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA5563A-22AA-4F56-AB39-BBF7B10BE813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9150F6-1FB2-4C64-8F16-CDA688199518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9150F6-1FB2-4C64-8F16-CDA688199518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9150F6-1FB2-4C64-8F16-CDA688199518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9150F6-1FB2-4C64-8F16-CDA688199518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C907FAC3-804F-46F8-8D47-6BB153F14A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C907FAC3-804F-46F8-8D47-6BB153F14A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C907FAC3-804F-46F8-8D47-6BB153F14A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C907FAC3-804F-46F8-8D47-6BB153F14A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F35061-E388-46BB-971F-C5C10BA34CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F35061-E388-46BB-971F-C5C10BA34CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F35061-E388-46BB-971F-C5C10BA34CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F35061-E388-46BB-971F-C5C10BA34CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
