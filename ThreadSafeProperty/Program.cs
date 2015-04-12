@@ -49,7 +49,7 @@ namespace ThreadSafeField
 
             for (int i = 0; i < 1000000; i++)
             {
-                int threadlocalCount = i % 100000; // range: 0 to 9999
+                int threadlocalCount = i % 100000; // range: 0 to 99999
 
                 Thread worker = new Thread(() =>
                 {
@@ -72,7 +72,7 @@ namespace ThreadSafeField
                 threadlist.Add(worker);
                 worker.Start();
             }
-
+            
             // Wait for all worker 
             Console.WriteLine(string.Format("Wait for all {0} worker...", threadlist.Count));
 
