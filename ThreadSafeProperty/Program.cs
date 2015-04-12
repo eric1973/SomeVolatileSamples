@@ -24,7 +24,9 @@ namespace ThreadSafeField
             listFactory = dict.GetOrAdd(count, (key) =>
             {
                 //Console.WriteLine("valueFactory for count '{0}'.", key);
-                return new Lazy<List<TimeSpan>>(() => this.CalculateIntervals(count));
+                return new Lazy<List<TimeSpan>>(
+                    () => this.CalculateIntervals(count), 
+                    isThreadSafe:true);
             });
 
             return listFactory;
@@ -45,15 +47,15 @@ namespace ThreadSafeField
             List<Thread> threadlist = new List<Thread>();
             Test tester  =new Test();
 
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 1000000; i++)
             {
-                int threadlocalCount = i % 10000; // range: 0 to 9999
+                int threadlocalCount = i % 100000; // range: 0 to 9999
 
                 Thread worker = new Thread(() =>
                 {
-                    Console.WriteLine("ThreadId: {0} procesing count '{1}'",
-                        Thread.CurrentThread.ManagedThreadId,
-                        threadlocalCount);
+                    //Console.WriteLine("ThreadId: {0} procesing count '{1}'",
+                    //    Thread.CurrentThread.ManagedThreadId,
+                    //    threadlocalCount);
 
                     var intervals = tester.GetIntervals(threadlocalCount);
 
